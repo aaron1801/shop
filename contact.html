@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>        
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - Bento grid website demo - No Script Show </title>
+
+<!--------------------------- 
+   https://schema.org/Organization 
+----------------------------->
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/composition.css" />
+    <link rel="stylesheet" href="/css/utility.css" />
+    <link rel="stylesheet" href="/css/block.css" />
+    <link rel="stylesheet" href="/css/exceptions.css" />
+
+      
+<!--------------------------- 
+    ADDITIONAL SEO
+----------------------------->
+
+<link rel="canonical" href="https://bento.here24.co"/>
+<meta name="description" content="This is a demo site for the No Script Show.">
+ <!-- Facebook image -->
+<meta property="og:image" content="/images/og-image.webp" />
+<!-- Twitter image -->
+<meta property="twitter:image" content="/images/og-image.webp" />
+
+<!--------------------------- 
+   FAVICON
+----------------------------->
+
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <link rel="icon" type="image/svg" href="/images/favicon.svg" />
+
+  </head>
+
+<!----------------------------------
+----------- BODY START -----------
+----------------------------------->
+
+
+
+  <body class="home" id="top">
+    <a href="#skip-to-main" class="skip-link">Skip to content</a>
+
+<!----------------------------------
+----------- HEADER -----------
+----------------------------------->
+
+<header>
+  
+<div class=" [ logo-area ] ">
+<a class="logo" href="/"><img src="/images/logo-bio.webp" 
+width="150" height="150" alt="Amy Barnes headshot as a  logo."></a>
+
+<h1>Amy Barnes
+<span>Mobile hairdresser</span>
+</h1>
+
+</div>
+
+<!------  HEADER > CONTACTS ------>
+ 
+<div class="[ header-contacts ]">
+  <ul>
+    <li>
+      <a href="tel:01234567890"> <img src="/svgs/phone.svg" alt=""> 01234 567 890</a>
+    </li>
+
+    <li>
+       <a href="mailto:%69%6e%66%6f%40%63%6f%6f%6c%2d%77%65%62%73%69%74%65%2e%63%6f%6d?subject=Enquiry%20from%20the%20NNS%20vets%20website."
+        ><img src="/svgs/mail.svg" alt="">
+        <span class="email">amy@mobilehair<b>.example</b>.com</span></a
+      >
+    </li>
+  </ul>
+</div>
+<!------  HEADER > NAVIGATION ------>
+
+<nav aria-label="Main">  
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="info.html">Info</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+  </nav>
+</header>
+
+    <main id="skip-to-main" class="page-layout">
+
+      <h1>Contact</h1>
+
+      
+
+      <div class="popout">
+
+        <p>This form is not connected.</p>
+
+      
+        <form id="contact-form" action="https://submit-form.com/1111" novalidate aria-label="Contact Form">
+          <div class="form-group" role="group" aria-labelledby="personal-info">
+            <h2 id="personal-info" class="visually-hidden">Personal Information</h2>
+            
+            <input type="hidden" name="_redirect" value="/thank-you/" />
+            
+            <div class="field-wrapper">
+              <label for="fullname">
+                Full Name
+                <span class="required" aria-hidden="true">*</span>
+                <span class="visually-hidden">required</span>
+              </label>
+              <input
+                type="text"
+                id="fullname"
+                name="name"
+                aria-required="true"
+                aria-describedby="name-error"
+                autocomplete="name"
+                minlength="2"
+                maxlength="50"
+                pattern="[A-Za-z\s'-]+"
+              />
+              <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
+            </div>
+        
+            <div class="field-wrapper">
+              <label for="email-address">
+                Email Address
+                <span class="required" aria-hidden="true">*</span>
+                <span class="visually-hidden">required</span>
+              </label>
+              <input
+                type="email"
+                id="email-address"
+                name="email"
+                aria-required="true"
+                aria-describedby="email-error"
+                autocomplete="email"
+              />
+              <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
+            </div>
+        
+            <div class="field-wrapper">
+              <label for="phone-number">Phone Number (optional)</label>
+              <input
+                type="tel"
+                id="phone-number"
+                name="tel"
+                aria-describedby="tel-hint tel-error"
+                autocomplete="tel"
+                pattern="[0-9\s+-]+"
+              />
+              <span id="tel-hint" class="hint-text">Include country code if international</span>
+              <span id="tel-error" class="error-message" role="alert" aria-live="polite"></span>
+            </div>
+        
+            <div class="field-wrapper">
+              <label for="message-text">
+                Message
+                <span class="required" aria-hidden="true">*</span>
+                <span class="visually-hidden">required</span>
+              </label>
+              <textarea
+                id="message-text"
+                name="message"
+                aria-required="true"
+                aria-describedby="message-error"
+                minlength="10"
+                maxlength="1000"
+              ></textarea>
+              <span id="message-error" class="error-message" role="alert" aria-live="polite"></span>
+            </div>
+          </div>
+        
+          <button class="btn" type="submit" aria-label="Submit form">
+            SEND
+          </button>
+        </form>
+    </div>
+
+    </main>
+<footer>
+  
+</footer>
+  </body>
+</html>

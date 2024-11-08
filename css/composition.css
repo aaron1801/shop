@@ -1,0 +1,175 @@
+/*
+COMPOSITION
+0_ BODY
+1_ HEADER & NAV 
+2_ HOMEPAGE MAIN
+4_ FOOTER 
+5_ BENTO
+6_ TEAM
+7_ FLUID BREAKOUTS 
+*/
+
+/********************************************************/
+
+/************ 0_ BODY ************/              
+
+/*********************************************************/
+  
+body { 
+  padding-inline: var(--space-l);
+}
+
+
+/**********1_ HEADER & NAV  **********/
+
+/************************************************************************************/
+
+header{
+  display: grid;
+  gap: var(--space-s);
+}
+
+@media (width <= 60rem){
+header >* {
+  display: grid;  
+  justify-content: center;
+ }
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: var(--space-m); 
+}
+}
+
+@media (width > 60rem){
+header {
+  display: grid;
+  grid-template-columns: max-content auto auto;
+  gap: var(--space-m);
+  
+}
+
+.header-contacts {  
+  justify-items: center;    
+}
+
+
+nav{
+align-self:center;
+}
+nav ul{
+  display: grid;
+  justify-content: center;
+
+}
+}
+
+
+nav ul{    
+  list-style: none;
+  }
+
+/************************************************************************************/
+
+/************ 2_ HOMEPAGE BENTO ************/
+
+/************************************************************************************/  
+ 
+
+@media (width < 60rem){
+main >* {
+  display: grid;
+  margin-block-end: var(--space-m);
+ }
+}
+
+
+
+@media (width > 60rem){
+main{
+  display: grid; 
+  gap:var(--space-m); 
+  grid-template:
+  " card-1 card-1 card-1 card-1 card-3  card-3" 
+  " card-4 card-4 card-5 card-5 card-3  card-3"
+  " card-6 card-6 card-6 card-6 card-7  card-7"
+  /
+    1fr    1fr    1fr    .5fr    1fr     1fr 
+ ;   
+  }
+}
+
+.card-1  {grid-area: card-1;}
+.card-2  {grid-area: card-2;}
+.card-3  {grid-area: card-3;}
+.card-4  {grid-area: card-4;}
+.card-5  {grid-area: card-5;}
+.card-6  {grid-area: card-6;}
+.card-7  {grid-area: card-7;}
+
+
+ 
+
+ /************************************************************************************/
+
+ /************ 4_ FOOTER ************/
+
+/************************************************************************************/  
+  
+
+
+ /************************************************************************************/
+
+ /************ 7_ FLUID BREAKOUTS ************/
+
+/************************************************************************************/  
+/* https://layout-breakouts-builder.vercel.app/ */
+
+.page-layout > *, .full-width > * {
+  grid-column: content;
+}
+.page-layout, .full-width {
+--minimum-content-padding: 2rem;
+
+/** TRACK WIDTHS **/
+--full-max-width: 1fr;
+--popout-max-width: 60rem;
+--content-max-width: 65ch;
+
+/** TRACK SIZES **/
+--full: minmax( var(--minimum-content-padding), 1fr );
+--popout: minmax( 0, calc( ( var(--popout-max-width) - var(--content-max-width)) * 0.5 ) );
+--content: min( var(--content-max-width), 100% - var(--minimum-content-padding) * 2 );
+
+display: grid;
+grid-template-columns: 
+  [full-start]
+  var(--full)
+    [popout-start]
+    var(--popout)
+      [content-start]
+      var(--content)
+      [content-end]
+    var(--popout)
+    [popout-end]
+  var(--full)
+  [full-end];
+}
+
+/** CLASSES **/
+.full { grid-column: full; }
+.full-start { grid-column-start: full-start; }
+.full-end { grid-column-end: full-end; }
+
+.popout { grid-column: popout; }
+.popout-start { grid-column-start: popout-start; }
+.popout-end { grid-column-end: popout-end; }
+
+.content { grid-column: content; }
+.content-start { grid-column-start: content-start; }
+.content-end { grid-column-end: content-end; }
+
+.full-width { grid-column: full; }
+.full-content, .full-content-nopad { grid-column: full; }
+.full-content { padding-inline: var(--minimum-content-padding); }
