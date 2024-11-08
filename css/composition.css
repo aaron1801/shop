@@ -78,7 +78,7 @@ nav ul{
  
 
 @media (width < 60rem){
-main >* {
+ .home main  >* {
   display: grid;
   margin-block-end: var(--space-m);
  }
@@ -87,7 +87,7 @@ main >* {
 
 
 @media (width > 60rem){
-main{
+.home main {
   display: grid; 
   gap:var(--space-m); 
   grid-template:
