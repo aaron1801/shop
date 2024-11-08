@@ -16,7 +16,7 @@ COMPOSITION
 /*********************************************************/
   
 body { 
-  padding-inline: var(--space-l);
+  padding-inline: var(--space-s-2xl);
 }
 
 
