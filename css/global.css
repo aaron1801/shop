@@ -19,7 +19,7 @@ GLOBAL STYLES
 /* Messing with Relative colour */
 
     /* :root {      
-      --brand: #816e5c;
+      --brand: #816a5c;
       --accent: hsl(from var(--brand) calc(h + 140) calc(s - 40) l);
       --secondary: hsl(from var(--brand) calc(h + 180) s calc(l + 25)); 
       --tertiary: hsl(from var(--brand) calc(h + 45) calc(s + 30) calc(l + 10));         
