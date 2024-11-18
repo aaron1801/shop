@@ -249,7 +249,7 @@ footer{
 form {
   margin-block-end: var(--space-m);
   background-color: var(--shadow-2);
-  padding: var(--space-m);
+
   border-radius: 0.5rem;
 }
 
@@ -336,8 +336,8 @@ textarea {
    border-block-end: .1rem solid var(--brand); 
   }  
   
-  .info main{
-   border-radius: 5rem;
-   border: .5rem solid var(--brand);
+  main:not(.home main){
+   border-radius: 2rem;
+   border: .4rem solid var(--brand);
    padding-block: 3rem;
   }
