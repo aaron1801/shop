@@ -135,6 +135,12 @@ Other card background styles
   }
 }
 
+/*  removes all browers button styles
+focus need to be added back */
+button{
+  all:unset
+}
+
 .btn,.btn:active{
   border-radius: 0.5rem;
   border: none;
@@ -156,9 +162,6 @@ Other card background styles
   margin-block-end: var(--space-s);
 }
 
-button.btn  {
-  padding: 1em 2em; 
-}
 
 .btn:hover {
   color:  var(--text);
@@ -168,6 +171,10 @@ button.btn  {
   background-color: hsl(from var(--tertiary) h s calc(l + -8)); 
 }  
  
+.btn:focus-visible{
+  outline: 0.3rem solid var(--accent);  
+  border-radius: 0.5rem;
+}
 
 /************************************************************************************/
 
