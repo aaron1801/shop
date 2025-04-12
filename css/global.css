@@ -18,7 +18,7 @@ GLOBAL STYLES
 
 /* Messing with Relative colour */
 
-    /* :root {      
+    :root {      
       --brand: #816a5c;
       --accent: hsl(from var(--brand) calc(h + 140) calc(s - 40) l);
       --secondary: hsl(from var(--brand) calc(h + 180) s calc(l + 25)); 
@@ -27,7 +27,7 @@ GLOBAL STYLES
       --text-alt: hsl(from var(--brand) h s calc(l + 75));      
       --surface: hsl(from var(--brand) h s calc(l + 75));
       --shadow:hsl(from var(--brand) calc(h + 40) s calc(l + 40));   
-    }   */
+    }  
 
 
     :root {      
@@ -38,7 +38,9 @@ GLOBAL STYLES
       --text:#291532; 
       --text-alt: #EFE9F2;      
       --surface: #F5F0F7; 
-      --shadow:#DACFDF;      
+      --shadow:#DACFDF;  
+      --alt:#31637a;
+      ;      
     }  
 
 
